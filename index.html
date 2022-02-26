@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10</title>
+	<style>
+		.tabs ul {
+			list-style: decimal;
+		}
+		.tabs .content {
+			height: 0;
+			opacity: 0;
+			font-size: 0;
+			transition: all .3s;
+		}
+		.tabs input[type="radio"]:checked ~ .content {
+			height: auto;
+			opacity: 1;
+			font-size: 16px;
+			padding: 15px;
+		}
+		.tabs input[type="radio"]:checked ~ label {
+			text-shadow:  1px 1px 1px rgba(0, 0, 0, .7);
+		}
+		.tabs label {
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: 700;
+			transition: all .3s;
+		}
+		.tabs label:hover {
+			cursor: pointer;
+			text-shadow:  1px 1px 1px rgba(0, 0, 0, .7);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<article>
+			<!-- tabs -->
+			<div class="tabs">
+				<ul>
+					<li>
+						<input hidden type="radio" id="item_0" name="phrase">
+						<label for="item_0">
+							ACIS PAKAUSĪ
+						</label>
+						<div class="content">
+							Lieto, izsmejoši jautājot, ja cilvēks ir nevērīgs, neredz ko viegli saskatāmu.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_1" name="phrase">
+						<label for="item_1">
+							ĀDA PĀR KĀRTI
+						</label>
+						<div class="content">
+							Saka, brīdinot kādu par sagaidāmo bargo sodu.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_2" name="phrase">
+						<label for="item_2">
+							ADATAI NAV KUR NOKRIST
+						</label>
+						<div class="content">
+							Saka, ja kāda telpa, vieta ir cilvēku vai priekšmetu pārpilna.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_3" name="phrase">
+						<label for="item_3">
+							PRĀTIŅ NĀC MĀJĀS
+						</label>
+						<div class="content">
+							Saka, ja sarunas biedrs ir pateicis ko muļķīgu.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_4" name="phrase">
+						<label for="item_4">
+							APLAUZT RAGUS
+						</label>
+						<div class="content">
+							Pārmācīt, apvaldīt kādu, mazināt kāda iedomību.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_5" name="phrase">
+						<label for="item_5">
+							APMĒTĀT AR DUBĻIEM
+						</label>
+						<div class="content">
+							Izteikt rupjus, nepatiesus apvainojumus/nomelnot.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_6" name="phrase">
+						<label for="item_6">
+							ASTE BLUĶĪ
+						</label>
+						<div class="content">
+							Saka, ja cilvēkam ir ierobežota rīcības brīvība.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_7" name="phrase">
+						<label for="item_7">
+							ASTI NOLAIDIS
+						</label>
+						<div class="content">
+							Uzvarēts, nokausējies, drosmi, cerības zaudējis.
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_8" name="phrase">
+						<label for="item_8">
+							ATKLĀT AMERIKU
+						</label>
+						<div class="content">
+							Izdarīt jaunus atklājumus, pateikt ko jaunu (Parasti nolieguma teikumos).
+						</div>
+					</li>
+					<li>
+						<input hidden type="radio" id="item_9" name="phrase">
+						<label for="item_9">
+							Kā sarkans pavediens
+						</label>
+						<div class="content">
+							Saka par galveno, būtisko, arī par to, kas ir uzsvērts.
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- /tabs -->
+		</article>
+	</main>
+</body>
+</html>
